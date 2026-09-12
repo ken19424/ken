@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>一心牛排 | Yi-Xin Cheap Steak</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== Navigation ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand">一心牛排</a>
+      <button class="nav-toggle" aria-label="選單" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">關於我們</a></li>
+        <li><a href="#menu">菜單</a></li>
+        <li><a href="#gallery">環境照片</a></li>
+        <li><a href="#contact">聯絡資訊</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== Hero Section ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">一心牛排</h1>
+      <p class="hero-subtitle">Yi-Xin Cheap Steak</p>
+      <p class="hero-tagline">平價享受，用心料理 — 嘉義人的家常牛排館</p>
+      <a href="#menu" class="btn btn-primary">查看菜單</a>
+    </div>
+  </section>
+
+  <!-- ========== About Section ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title">關於一心牛排</h2>
+      <p class="section-divider"></p>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>一心牛排，位於嘉義市吳鳳北路，是一家深受在地人喜愛的台式牛排館。我們堅持提供平價、美味的餐點，讓每一位顧客都能輕鬆享受牛排的滋味。</p>
+          <p>從經典菲力到厚片沙朗，再到魚排、雞排、豬排的多元選擇，一心牛排以誠摯的心意，為您打造溫暖的用餐體驗。無論是家庭聚餐、朋友小聚，這裡都是您安心落胃的好去處。</p>
+        </div>
+        <div class="about-info">
+          <div class="info-card">
+            <h3>營業時間</h3>
+            <p>每日 16:00 – 21:00</p>
+          </div>
+          <div class="info-card">
+            <h3>餐廳地址</h3>
+            <p>嘉義市吳鳳北路314號</p>
+          </div>
+          <div class="info-card">
+            <h3>聯絡電話</h3>
+            <p>05-2710887 / 0988-555-555</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Menu Section ========== -->
+  <section class="menu section" id="menu">
+    <div class="container">
+      <h2 class="section-title">菜單</h2>
+      <p class="section-divider"></p>
+
+      <div class="menu-notice">
+        <span>◎ 填單時請於醬料欄位打勾選醬料，謝謝。</span><br/>
+        <span>◎ 內用共餐需加收 50 元。</span>
+      </div>
+
+      <!-- Single Items -->
+      <h3 class="menu-category">單點品項</h3>
+      <div class="menu-table-wrap">
+        <table class="menu-table">
+          <thead>
+            <tr>
+              <th>品名</th>
+              <th>單價（NTD）</th>
+              <th>黑胡椒</th>
+              <th>綜合醬</th>
+              <th>蘑菇醬</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>菲力牛排</td><td class="price">320</td><td></td><td></td><td></td></tr>
+            <tr><td>厚片沙朗</td><td class="price">220</td><td></td><td></td><td></td></tr>
+            <tr><td>魚排</td><td class="price">160</td><td></td><td></td><td></td></tr>
+            <tr><td>牛排</td><td class="price">170</td><td></td><td></td><td></td></tr>
+            <tr><td>雞排</td><td class="price">170</td><td></td><td></td><td></td></tr>
+            <tr><td>豬排</td><td class="price">150</td><td></td><td></td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Combo Items -->
+      <h3 class="menu-category">雙人套餐</h3>
+      <div class="menu-table-wrap">
+        <table class="menu-table">
+          <thead>
+            <tr>
+              <th>品名</th>
+              <th>單價（NTD）</th>
+              <th>黑胡椒</th>
+              <th>綜合醬</th>
+              <th>蘑菇醬</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>菲力＋雞排</td><td class="price">410</td><td></td><td></td><td></td></tr>
+            <tr><td>厚牛＋厚牛</td><td class="price">360</td><td></td><td></td><td></td></tr>
+            <tr><td>厚牛＋雞排</td><td class="price">300</td><td></td><td></td><td></td></tr>
+            <tr><td>牛排＋牛排</td><td class="price">260</td><td></td><td></td><td></td></tr>
+            <tr><td>牛排＋雞排</td><td class="price">260</td><td></td><td></td><td></td></tr>
+            <tr><td>牛排＋魚排</td><td class="price">260</td><td></td><td></td><td></td></tr>
+            <tr><td>魚排＋雞排</td><td class="price">260</td><td></td><td></td><td></td></tr>
+            <tr><td>魚排＋豬排</td><td class="price">250</td><td></td><td></td><td></td></tr>
+            <tr><td>雞排＋豬排</td><td class="price">250</td><td></td><td></td><td></td></tr>
+            <tr><td>牛排＋豬排</td><td class="price">250</td><td></td><td></td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Extra -->
+      <h3 class="menu-category">加點品項</h3>
+      <div class="menu-table-wrap">
+        <table class="menu-table">
+          <thead>
+            <tr>
+              <th>品名</th>
+              <th>單價（NTD）</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>鐵板麵</td><td class="price">100</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== Gallery Section ========== -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <h2 class="section-title">環境照片</h2>
+      <p class="section-divider"></p>
+      <div class="gallery-grid">
+        <div class="gallery-item"><span class="placeholder-icon">🍽️</span><p>餐廳內裝</p></div>
+        <div class="gallery-item"><span class="placeholder-icon">🥩</span><p>招牌牛排</p></div>
+        <div class="gallery-item"><span class="placeholder-icon">👨‍🍳</span><p>用心料理</p></div>
+        <div class="gallery-item"><span class="placeholder-icon">🏠</span><p>溫馨空間</p></div>
+      </div>
+      <p class="gallery-note">※ 照片區塊為預留位置，後續可替換為實際餐廳照片。</p>
+    </div>
+  </section>
+
+  <!-- ========== Contact Section ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <h2 class="section-title">聯絡資訊</h2>
+      <p class="section-divider"></p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>地址</strong>
+              <p>嘉義市吳鳳北路314號</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <strong>電話</strong>
+              <p>05-2710887 / 0988-555-555</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🕐</span>
+            <div>
+              <strong>營業時間</strong>
+              <p>每日 16:00 – 21:00</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map">
+          <!-- Google Maps Embed -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.1!2d120.4617!3d23.4659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzU3LjIiTiAxMjDCsDI3JzQyLjEiRQ!5e0!3m2!1szh-TW!2stw!4v1700000000000"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 一心牛排 Yi-Xin Cheap Steak. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
