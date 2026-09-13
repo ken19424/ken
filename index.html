@@ -52,8 +52,8 @@
     "servesCuisine": ["台式牛排", "中式料理"],
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "吳鳳北路314號",
-      "addressLocality": "嘉義市西區",
+      "streetAddress": "600嘉義市東區北門里吳鳳北路314號",
+      "addressLocality": "嘉義市東區",
       "addressRegion": "嘉義市",
       "postalCode": "60052",
       "addressCountry": "TW"
@@ -96,8 +96,9 @@
   </nav>
 
   <!-- ========== Hero Section ========== -->
-  <section id="hero" class="relative min-h-screen flex items-center justify-center text-center bg-gradient-to-br from-[#5D3A1A] to-[#8B1A1A] overflow-hidden">
-    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(44,24,16,0.5)_100%)]"></div>
+  <section id="hero" class="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
+    <img src="images/品牌.JPG" alt="一心牛排" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(44,24,16,0.7)_100%)]"></div>
     <div class="relative z-[1] px-6">
       <h1 class="font-serif text-[clamp(3rem,8vw,6rem)] text-[#D4A745] tracking-[12px] drop-shadow-xl mb-3">一心牛排</h1>
       <p class="text-[clamp(1rem,2.5vw,1.3rem)] text-[#F5EDE0] tracking-[6px] uppercase mb-6">Yi-Xin Cheap Steak</p>
@@ -123,7 +124,7 @@
           </div>
           <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
             <h3 class="text-lg font-bold text-[#5D3A1A] mb-2">餐廳地址</h3>
-            <p class="text-gray-600">嘉義市吳鳳北路314號</p>
+            <p class="text-gray-600">600嘉義市東區北門里吳鳳北路314號</p>
           </div>
           <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
             <h3 class="text-lg font-bold text-[#5D3A1A] mb-2">聯絡電話</h3>
@@ -213,6 +214,10 @@
         </table>
       </div>
 
+      <div class="mt-10">
+        <img src="images/菜單.png" alt="一心牛排菜單" class="w-full rounded-xl shadow-lg border border-gray-200" loading="lazy" />
+      </div>
+
     </div>
   </section>
 
@@ -222,12 +227,10 @@
       <h2 class="font-serif text-3xl md:text-4xl text-center font-bold text-[#5D3A1A] mb-2 tracking-wide">環境照片</h2>
       <p class="w-16 h-1 bg-[#C0392B] mx-auto mb-10 rounded-full"></p>
       <div class="gallery-grid">
-        <div class="gallery-item"><span class="placeholder-icon">🍽️</span><p>餐廳內裝</p></div>
-        <div class="gallery-item"><span class="placeholder-icon">🥩</span><p>招牌牛排</p></div>
-        <div class="gallery-item"><span class="placeholder-icon">👨‍🍳</span><p>用心料理</p></div>
-        <div class="gallery-item"><span class="placeholder-icon">🏠</span><p>溫馨空間</p></div>
+        <div class="gallery-item"><img src="images/店面外觀 (2).jpg" alt="餐廳外觀" loading="lazy" /><p>餐廳外觀</p></div>
+        <div class="gallery-item"><img src="images/餐點 (2).JPG" alt="招牌牛排" loading="lazy" /><p>招牌牛排</p></div>
+        <div class="gallery-item"><img src="images/餐點.JPG" alt="特色餐點" loading="lazy" /><p>特色餐點</p></div>
       </div>
-      <p class="gallery-note">※ 照片區塊為預留位置，後續可替換為實際餐廳照片。</p>
     </div>
   </section>
 
@@ -242,7 +245,7 @@
             <span class="contact-icon">📍</span>
             <div>
               <strong>地址</strong>
-              <p class="text-gray-600">嘉義市吳鳳北路314號</p>
+              <p class="text-gray-600">600嘉義市東區北門里吳鳳北路314號</p>
             </div>
           </div>
           <div class="contact-item">
