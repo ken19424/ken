@@ -202,6 +202,37 @@
     </div>
   </section>
 
+  <!-- ========== JavaScript ========== -->
+  <script>
+    // ---- Hamburger Menu Toggle ----
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    // Close menu when a link is clicked (mobile)
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+      });
+    });
+
+    // ---- Navbar Scroll Effect ----
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 80) {
+        navbar.style.background = 'rgba(44, 24, 16, 0.97)';
+        navbar.style.boxShadow = '0 2px 12px rgba(0,0,0,0.3)';
+      } else {
+        navbar.style.background = 'rgba(93, 58, 26, 0.92)';
+        navbar.style.boxShadow = 'none';
+      }
+    });
+  </script>
+
   <!-- ========== Footer ========== -->
   <footer class="footer">
     <div class="container">
