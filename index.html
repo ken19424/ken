@@ -141,81 +141,59 @@
       <h2 class="font-serif text-3xl md:text-4xl text-center font-bold text-[#5D3A1A] mb-2 tracking-wide">菜單</h2>
       <p class="w-16 h-1 bg-[#C0392B] mx-auto mb-10 rounded-full"></p>
 
-      <div class="menu-notice">
-        <span>◎ 填單時請於醬料欄位打勾選醬料，謝謝。</span><br/>
-        <span>◎ 內用共餐需加收 50 元。</span>
+      <!-- Menu Notice -->
+      <div style="background:#FFF8F0;border-left:4px solid #C0392B;padding:16px 20px;margin-bottom:32px;border-radius:0 8px 8px 0;font-size:1rem;color:#5D3A1A;line-height:1.8;">
+        <p>◎ 填單時請於醬料欄位打勾選醬料，謝謝。</p>
+        <p>◎ 內用共餐需加收 50 元。</p>
       </div>
 
-      <!-- Single Items -->
+      <!-- ====== 單點品項 ====== -->
       <h3 class="menu-category">單點品項</h3>
-      <div class="menu-table-wrap">
-        <table class="menu-table">
-          <thead>
-            <tr>
-              <th>品名</th>
-              <th>單價（NTD）</th>
-              <th>黑胡椒</th>
-              <th>綜合醬</th>
-              <th>蘑菇醬</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>菲力牛排</td><td class="price">320</td><td></td><td></td><td></td></tr>
-            <tr><td>厚片沙朗</td><td class="price">220</td><td></td><td></td><td></td></tr>
-            <tr><td>魚排</td><td class="price">160</td><td></td><td></td><td></td></tr>
-            <tr><td>牛排</td><td class="price">170</td><td></td><td></td><td></td></tr>
-            <tr><td>雞排</td><td class="price">170</td><td></td><td></td><td></td></tr>
-            <tr><td>豬排</td><td class="price">150</td><td></td><td></td><td></td></tr>
-          </tbody>
-        </table>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:24px;margin-bottom:48px;">
+        <!-- 菲力牛排 -->
+        <div class="menu-card"><div class="menu-card-img"><span>照片待補</span></div><div class="menu-card-body"><h4 class="menu-card-title">菲力牛排</h4><p class="menu-card-price">$320</p></div></div>
+        <!-- 厚片沙朗 -->
+        <div class="menu-card"><div class="menu-card-img"><span>照片待補</span></div><div class="menu-card-body"><h4 class="menu-card-title">厚片沙朗</h4><p class="menu-card-price">$220</p></div></div>
+        <!-- 魚排 -->
+        <div class="menu-card"><div class="menu-card-img"><span>照片待補</span></div><div class="menu-card-body"><h4 class="menu-card-title">魚排</h4><p class="menu-card-price">$160</p></div></div>
+        <!-- 牛排 -->
+        <div class="menu-card"><div class="menu-card-img"><span>照片待補</span></div><div class="menu-card-body"><h4 class="menu-card-title">牛排</h4><p class="menu-card-price">$170</p></div></div>
+        <!-- 雞排 -->
+        <div class="menu-card"><div class="menu-card-img"><span>照片待補</span></div><div class="menu-card-body"><h4 class="menu-card-title">雞排</h4><p class="menu-card-price">$170</p></div></div>
+        <!-- 豬排 -->
+        <div class="menu-card"><div class="menu-card-img"><span>照片待補</span></div><div class="menu-card-body"><h4 class="menu-card-title">豬排</h4><p class="menu-card-price">$150</p></div></div>
       </div>
 
-      <!-- Combo Items -->
+      <!-- ====== 雙人套餐 ====== -->
       <h3 class="menu-category">雙人套餐</h3>
-      <div class="menu-table-wrap">
-        <table class="menu-table">
-          <thead>
-            <tr>
-              <th>品名</th>
-              <th>單價（NTD）</th>
-              <th>黑胡椒</th>
-              <th>綜合醬</th>
-              <th>蘑菇醬</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>菲力＋雞排</td><td class="price">410</td><td></td><td></td><td></td></tr>
-            <tr><td>厚牛＋厚牛</td><td class="price">360</td><td></td><td></td><td></td></tr>
-            <tr><td>厚牛＋雞排</td><td class="price">300</td><td></td><td></td><td></td></tr>
-            <tr><td>牛排＋牛排</td><td class="price">260</td><td></td><td></td><td></td></tr>
-            <tr><td>牛排＋雞排</td><td class="price">260</td><td></td><td></td><td></td></tr>
-            <tr><td>牛排＋魚排</td><td class="price">260</td><td></td><td></td><td></td></tr>
-            <tr><td>魚排＋雞排</td><td class="price">260</td><td></td><td></td><td></td></tr>
-            <tr><td>魚排＋豬排</td><td class="price">250</td><td></td><td></td><td></td></tr>
-            <tr><td>雞排＋豬排</td><td class="price">250</td><td></td><td></td><td></td></tr>
-            <tr><td>牛排＋豬排</td><td class="price">250</td><td></td><td></td><td></td></tr>
-          </tbody>
-        </table>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:24px;margin-bottom:48px;">
+        <!-- 菲力＋雞排 -->
+        <div class="menu-card"><div class="menu-card-img"><span>照片待補</span></div><div class="menu-card-body"><h4 class="menu-card-title">菲力＋雞排</h4><p class="menu-card-price">$410</p></div></div>
+        <!-- 厚牛＋厚牛 -->
+        <div class="menu-card"><div class="menu-card-img"><span>照片待補</span></div><div class="menu-card-body"><h4 class="menu-card-title">厚牛＋厚牛</h4><p class="menu-card-price">$360</p></div></div>
+        <!-- 厚牛＋雞排 -->
+        <div class="menu-card"><div class="menu-card-img"><span>照片待補</span></div><div class="menu-card-body"><h4 class="menu-card-title">厚牛＋雞排</h4><p class="menu-card-price">$300</p></div></div>
+        <!-- 牛排＋牛排 -->
+        <div class="menu-card"><div class="menu-card-img"><span>照片待補</span></div><div class="menu-card-body"><h4 class="menu-card-title">牛排＋牛排</h4><p class="menu-card-price">$260</p></div></div>
+        <!-- 牛排＋雞排 -->
+        <div class="menu-card"><div class="menu-card-img"><span>照片待補</span></div><div class="menu-card-body"><h4 class="menu-card-title">牛排＋雞排</h4><p class="menu-card-price">$260</p></div></div>
+        <!-- 牛排＋魚排 -->
+        <div class="menu-card"><div class="menu-card-img"><span>照片待補</span></div><div class="menu-card-body"><h4 class="menu-card-title">牛排＋魚排</h4><p class="menu-card-price">$260</p></div></div>
+        <!-- 魚排＋雞排 -->
+        <div class="menu-card"><div class="menu-card-img"><span>照片待補</span></div><div class="menu-card-body"><h4 class="menu-card-title">魚排＋雞排</h4><p class="menu-card-price">$260</p></div></div>
+        <!-- 魚排＋豬排 -->
+        <div class="menu-card"><div class="menu-card-img"><span>照片待補</span></div><div class="menu-card-body"><h4 class="menu-card-title">魚排＋豬排</h4><p class="menu-card-price">$250</p></div></div>
+        <!-- 雞排＋豬排 -->
+        <div class="menu-card"><div class="menu-card-img"><span>照片待補</span></div><div class="menu-card-body"><h4 class="menu-card-title">雞排＋豬排</h4><p class="menu-card-price">$250</p></div></div>
+        <!-- 牛排＋豬排 -->
+        <div class="menu-card"><div class="menu-card-img"><span>照片待補</span></div><div class="menu-card-body"><h4 class="menu-card-title">牛排＋豬排</h4><p class="menu-card-price">$250</p></div></div>
       </div>
 
-      <!-- Extra -->
+      <!-- ====== 加點品項 ====== -->
       <h3 class="menu-category">加點品項</h3>
-      <div class="menu-table-wrap">
-        <table class="menu-table">
-          <thead>
-            <tr>
-              <th>品名</th>
-              <th>單價（NTD）</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>鐵板麵</td><td class="price">100</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="mt-10">
-        <img src="images/菜單.png" alt="一心牛排菜單" class="w-full rounded-xl shadow-lg border border-gray-200" loading="lazy" />
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:24px;margin-bottom:48px;">
+        <!-- 鐵板麵 -->
+        <div class="menu-card"><div class="menu-card-img"><span>照片待補</span></div><div class="menu-card-body"><h4 class="menu-card-title">鐵板麵</h4><p class="menu-card-price">$100</p></div></div>
       </div>
 
     </div>
