@@ -78,29 +78,31 @@
 <body>
 
   <!-- ========== Navigation ========== -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-inner">
-      <a href="#hero" class="nav-brand">一心牛排</a>
-      <button class="nav-toggle" aria-label="選單" id="navToggle">
-        <span></span><span></span><span></span>
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-[1000] bg-[rgba(93,58,26,0.92)] backdrop-blur-md">
+    <div class="max-w-[1100px] mx-auto px-6 flex items-center justify-between h-16">
+      <a href="#hero" class="font-serif text-[#D4A745] text-[1.35rem] font-bold tracking-[2px]">一心牛排</a>
+      <button aria-label="選單" id="navToggle" class="hidden flex-col gap-[5px] bg-none border-none cursor-pointer p-1">
+        <span class="block w-6 h-[2px] bg-[#FFF8F0] rounded-sm transition duration-300"></span>
+        <span class="block w-6 h-[2px] bg-[#FFF8F0] rounded-sm transition duration-300"></span>
+        <span class="block w-6 h-[2px] bg-[#FFF8F0] rounded-sm transition duration-300"></span>
       </button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about">關於我們</a></li>
-        <li><a href="#menu">菜單</a></li>
-        <li><a href="#gallery">環境照片</a></li>
-        <li><a href="#contact">聯絡資訊</a></li>
+      <ul id="navLinks" class="flex list-none gap-8">
+        <li><a href="#about" class="text-[#FFF8F0] text-sm transition-colors relative">關於我們</a></li>
+        <li><a href="#menu" class="text-[#FFF8F0] text-sm transition-colors relative">菜單</a></li>
+        <li><a href="#gallery" class="text-[#FFF8F0] text-sm transition-colors relative">環境照片</a></li>
+        <li><a href="#contact" class="text-[#FFF8F0] text-sm transition-colors relative">聯絡資訊</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- ========== Hero Section ========== -->
-  <section class="hero" id="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1 class="hero-title">一心牛排</h1>
-      <p class="hero-subtitle">Yi-Xin Cheap Steak</p>
-      <p class="hero-tagline">平價享受，用心料理 — 嘉義人的家常牛排館</p>
-      <a href="#menu" class="btn btn-primary">查看菜單</a>
+  <section id="hero" class="relative min-h-screen flex items-center justify-center text-center bg-gradient-to-br from-[#5D3A1A] to-[#8B1A1A] overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(44,24,16,0.5)_100%)]"></div>
+    <div class="relative z-[1] px-6">
+      <h1 class="font-serif text-[clamp(3rem,8vw,6rem)] text-[#D4A745] tracking-[12px] drop-shadow-xl mb-3">一心牛排</h1>
+      <p class="text-[clamp(1rem,2.5vw,1.3rem)] text-[#F5EDE0] tracking-[6px] uppercase mb-6">Yi-Xin Cheap Steak</p>
+      <p class="text-[clamp(0.95rem,2vw,1.15rem)] text-[#FFF8F0]/85 max-w-[500px] mx-auto mb-10">平價享受，用心料理 — 嘉義人的家常牛排館</p>
+      <a href="#menu" class="inline-block px-9 py-[14px] rounded-md bg-[#C0392B] text-white shadow-lg transition-all duration-300 hover:bg-[#E74C3C] hover:-translate-y-[2px] hover:shadow-[0_6px_24px_rgba(192,57,43,0.5)]">查看菜單</a>
     </div>
   </section>
 
