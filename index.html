@@ -1,294 +1,367 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant-TW">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>一心牛排 | Yi-Xin Cheap Steak — 嘉義平價牛排館</title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="一心牛排，位於嘉義市吳鳳北路，是一家深受在地人喜愛的台式牛排館。提供平價美味的菲力、沙朗、魚排等多元選擇，營業時間每日16:00-21:00。" />
-  <meta name="keywords" content="一心牛排, 嘉義牛排, 平價牛排, 台式牛排館, 吳鳳北路, 嘉義美食" />
-  <meta name="author" content="一心牛排 Yi-Xin Cheap Steak" />
-  <meta name="robots" content="index, follow" />
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="restaurant" />
-  <meta property="og:url" content="https://yixin-steak.com.tw/" />
-  <meta property="og:title" content="一心牛排 | Yi-Xin Cheap Steak — 嘉義平價牛排館" />
-  <meta property="og:description" content="平價享受，用心料理 — 嘉義人的家常牛排館。提供菲力、沙朗、魚排等多元選擇。" />
-  <meta property="og:image" content="https://yixin-steak.com.tw/og-image.jpg" />
-  <meta property="og:locale" content="zh_TW" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://yixin-steak.com.tw/" />
-  <meta name="twitter:title" content="一心牛排 | Yi-Xin Cheap Steak — 嘉義平價牛排館" />
-  <meta name="twitter:description" content="平價享受，用心料理 — 嘉義人的家常牛排館。提供菲力、沙朗、魚排等多元選擇。" />
-  <meta name="twitter:image" content="https://yixin-steak.com.tw/og-image.jpg" />
-
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://yixin-steak.com.tw/" />
-
-  <!-- Favicon (placeholder) -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet" />
-
-  <!-- JSON-LD Structured Data -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#211811">
+  <title>一心牛排 Yi-Xin Steak｜嘉義質感台式牛排館</title>
+  <meta name="description" content="一心牛排位於嘉義市吳鳳北路，提供菲力、沙朗、魚排、雞排、豬排與雙人套餐。每日 16:00–21:30，歡迎蒞臨。">
+  <meta name="keywords" content="一心牛排,嘉義牛排,嘉義美食,吳鳳北路,台式牛排,雙人套餐">
+  <meta name="author" content="一心牛排">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://yixin-steak.com.tw/">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:url" content="https://yixin-steak.com.tw/">
+  <meta property="og:title" content="一心牛排｜平價享受，用心料理">
+  <meta property="og:description" content="嘉義人的家常牛排館，提供多樣單點與雙人套餐。">
+  <meta property="og:image" content="https://yixin-steak.com.tw/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="一心牛排｜平價享受，用心料理">
+  <meta name="twitter:description" content="嘉義人的家常牛排館，提供多樣單點與雙人套餐。">
+  <meta name="twitter:image" content="https://yixin-steak.com.tw/og-image.jpg">
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Restaurant",
-    "name": "一心牛排",
-    "alternateName": "Yi-Xin Cheap Steak",
-    "description": "位於嘉義市吳鳳北路的平價台式牛排館，提供菲力、沙朗、魚排等多元選擇。",
-    "url": "https://yixin-steak.com.tw/",
-    "image": "https://yixin-steak.com.tw/og-image.jpg",
-    "priceRange": "NTD 150–410",
-    "servesCuisine": ["台式牛排", "中式料理"],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "600嘉義市東區北門里吳鳳北路314號",
-      "addressLocality": "嘉義市東區",
-      "addressRegion": "嘉義市",
-      "postalCode": "60052",
-      "addressCountry": "TW"
+    "@context":"https://schema.org",
+    "@type":"Restaurant",
+    "name":"一心牛排",
+    "alternateName":"Yi-Xin Steak",
+    "description":"位於嘉義市吳鳳北路的台式牛排館，提供菲力、沙朗、魚排、雞排、豬排與雙人套餐。",
+    "url":"https://yixin-steak.com.tw/",
+    "image":"https://yixin-steak.com.tw/og-image.jpg",
+    "priceRange":"NT$150–410",
+    "servesCuisine":["台式牛排","中式料理"],
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"吳鳳北路314號",
+      "addressLocality":"嘉義市東區",
+      "postalCode":"60052",
+      "addressCountry":"TW"
     },
-    "telephone": "+886-5-2710887",
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
-      ],
-      "opens": "16:00",
-      "closes": "21:00"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 23.483981,
-      "longitude": 120.453303
-    }
+    "telephone":"+886-5-2710887",
+    "openingHoursSpecification":[{
+      "@type":"OpeningHoursSpecification",
+      "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens":"16:00",
+      "closes":"21:30"
+    }],
+    "geo":{"@type":"GeoCoordinates","latitude":23.483981,"longitude":120.453303}
   }
   </script>
+  <style>
+    :root {
+      --ink:#241a13; --coffee:#382719; --coffee-2:#503923; --gold:#c7a46a;
+      --gold-light:#e3cc9f; --cream:#f7f3eb; --paper:#fffdf9; --muted:#82786c;
+      --line:#e8dfd1; --red:#9e3d2e; --shadow:0 18px 50px rgba(36,26,19,.10);
+      --serif:"Noto Serif TC",serif; --sans:"Noto Sans TC",sans-serif;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:88px}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.8}
+    img{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit}
+    .container{width:min(1120px,calc(100% - 48px));margin-inline:auto}
+    .eyebrow{display:flex;align-items:center;gap:12px;color:var(--gold);font-size:.75rem;letter-spacing:.28em;text-transform:uppercase;font-weight:600}
+    .eyebrow:before,.eyebrow:after{content:"";height:1px;width:28px;background:currentColor}
+    .section{padding:104px 0}
+    .section-heading{text-align:center;margin:0 auto 52px}
+    .section-heading .eyebrow{justify-content:center;margin-bottom:14px}
+    h2{font:600 clamp(2rem,4vw,2.8rem)/1.35 var(--serif);letter-spacing:.08em;margin:0;color:var(--coffee)}
+    .section-heading p{color:var(--muted);margin:13px 0 0;font-size:.94rem}
+    .topbar{height:4px;background:linear-gradient(90deg,#80613b,var(--gold-light),#80613b)}
+    .navbar{position:fixed;z-index:50;inset:4px 0 auto;background:rgba(36,26,19,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(227,204,159,.18);transition:box-shadow .25s,background .25s}
+    .nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font:600 1.5rem var(--serif);letter-spacing:.16em;color:var(--gold-light);white-space:nowrap}
+    .brand small{display:block;font:400 .55rem var(--sans);letter-spacing:.28em;color:#d8c6a7;margin-top:-3px}
+    .nav-links{display:flex;align-items:center;gap:34px;list-style:none;padding:0;margin:0}
+    .nav-links a{color:#f6efe4;font-size:.9rem;letter-spacing:.08em;transition:color .2s}
+    .nav-links a:hover{color:var(--gold-light)}
+    .nav-cta{padding:9px 18px;border:1px solid var(--gold);color:var(--gold-light)!important}
+    .menu-toggle{display:none;background:none;border:1px solid rgba(227,204,159,.5);color:white;width:44px;height:42px;border-radius:2px;cursor:pointer}
+    .hero{min-height:760px;height:min(920px,100svh);position:relative;display:grid;place-items:center;text-align:center;overflow:hidden;background:#241a13}
+    .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 55%;filter:brightness(.58);transform:scale(1.01)}
+    .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(24,17,12,.72),rgba(24,17,12,.24) 55%,rgba(24,17,12,.58)),linear-gradient(0deg,rgba(24,17,12,.55),transparent 55%)}
+    .hero-content{position:relative;z-index:1;padding:120px 24px 70px;max-width:850px}
+    .hero-kicker{color:var(--gold-light);letter-spacing:.38em;font-size:.82rem;margin-bottom:22px}
+    .hero h1{font:600 clamp(3.3rem,9vw,6.8rem)/1.2 var(--serif);letter-spacing:.2em;color:#f0d9ad;text-shadow:0 5px 28px #000;margin:0 0 14px;padding-left:.2em}
+    .hero-en{color:#f5eee3;letter-spacing:.42em;font-size:.83rem;margin:0 0 25px}
+    .hero-copy{color:#f6efe6;font:400 clamp(1rem,2.2vw,1.2rem) var(--serif);letter-spacing:.16em;margin:0 0 38px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 28px;border:1px solid var(--gold);background:var(--gold);color:#241a13;font-size:.9rem;letter-spacing:.12em;transition:transform .2s,background .2s}
+    .btn:hover{transform:translateY(-3px);background:var(--gold-light)}
+    .btn-outline{background:transparent;color:var(--gold-light)}
+    .hero-note{margin-top:50px;color:rgba(255,255,255,.7);font-size:.78rem;letter-spacing:.18em}
+    .intro{background:var(--cream)}
+    .intro-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:76px;align-items:center}
+    .intro-photo{position:relative;min-height:420px}
+    .intro-photo img{width:100%;height:420px;object-fit:cover;box-shadow:var(--shadow)}
+    .intro-photo:after{content:"";position:absolute;inset:16px -16px -16px 16px;border:1px solid var(--gold);z-index:0;pointer-events:none}
+    .intro-photo img{position:relative;z-index:1}
+    .intro-copy .eyebrow{margin-bottom:18px}
+    .intro-copy h2{margin-bottom:24px}
+    .intro-copy p{color:#665c51;margin:0 0 17px}
+    .info-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:55px;border:1px solid var(--line)}
+    .info-item{background:var(--paper);padding:23px 16px;text-align:center}
+    .info-item strong{display:block;color:var(--coffee);font:600 1rem var(--serif);letter-spacing:.08em;margin-bottom:5px}
+    .info-item span{font-size:.88rem;color:var(--muted)}
+    .menu-section{background:var(--paper)}
+    .menu-notice{max-width:850px;margin:-18px auto 48px;padding:16px 22px;border:1px solid #e7d7bd;background:#faf6ee;color:#6a5032;font-size:.9rem}
+    .menu-notice p{margin:3px 0}
+    .menu-group{margin-top:58px}
+    .menu-group:first-of-type{margin-top:0}
+    .group-title{display:flex;align-items:center;gap:18px;margin:0 0 24px;font:600 1.55rem var(--serif);letter-spacing:.1em;color:var(--coffee)}
+    .group-title:after{content:"";height:1px;flex:1;background:var(--line)}
+    .menu-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .menu-card{background:white;border:1px solid var(--line);padding:24px 25px;display:flex;justify-content:space-between;align-items:center;gap:14px;min-height:94px;transition:transform .2s,border-color .2s,box-shadow .2s}
+    .menu-card:hover{transform:translateY(-3px);border-color:#cdb58e;box-shadow:0 12px 28px rgba(36,26,19,.07)}
+    .menu-card h4{font-size:1rem;font-weight:500;color:var(--coffee);margin:0;letter-spacing:.04em}
+    .menu-card .price{font:600 1.15rem var(--serif);color:var(--red);white-space:nowrap}
+    .menu-card .price small{font:400 .7rem var(--sans);color:var(--muted);margin-right:2px}
+    .gallery{background:var(--cream)}
+    .gallery-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:18px}
+    .gallery-card{position:relative;overflow:hidden;background:#ddd;min-height:280px}
+    .gallery-card:first-child{min-height:390px}
+    .gallery-card img{width:100%;height:100%;min-height:280px;object-fit:cover;transition:transform .6s}
+    .gallery-card:first-child img{min-height:390px}
+    .gallery-card:hover img{transform:scale(1.045)}
+    .gallery-card figcaption{position:absolute;inset:auto 0 0;padding:34px 20px 17px;color:white;font:500 1rem var(--serif);letter-spacing:.1em;background:linear-gradient(transparent,rgba(0,0,0,.72))}
+    .contact{background:var(--paper)}
+    .contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:stretch}
+    .contact-details{display:flex;flex-direction:column;gap:25px}
+    .contact-row{display:grid;grid-template-columns:42px 1fr;gap:13px;align-items:start}
+    .contact-icon{width:40px;height:40px;border:1px solid #d9c39c;color:#9b7744;display:grid;place-items:center;font-size:1.1rem}
+    .contact-row strong{display:block;color:var(--coffee);font:600 1rem var(--serif);margin-bottom:3px}
+    .contact-row p{margin:0;color:var(--muted);font-size:.92rem}
+    .contact-row a:hover{color:var(--red);text-decoration:underline}
+    .contact-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .contact-actions .btn{min-height:44px;padding:0 18px;font-size:.82rem}
+    .map-wrap{min-height:390px;box-shadow:var(--shadow);border:1px solid var(--line)}
+    .map-wrap iframe{display:block;width:100%;height:100%;min-height:390px;border:0}
+    footer{background:var(--ink);color:#c8bba8;text-align:center;padding:34px 20px}
+    footer .footer-brand{font:600 1.35rem var(--serif);letter-spacing:.16em;color:var(--gold-light)}
+    footer p{font-size:.78rem;margin:9px 0 0;color:#a99c89}
+    .mobile-call{display:none}
+    @media(max-width:800px){
+      .container{width:min(100% - 36px,650px)}
+      .section{padding:78px 0}
+      .nav-inner{height:68px}
+      .menu-toggle{display:grid;place-items:center}
+      .nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:rgba(36,26,19,.98);padding:14px 24px 22px;flex-direction:column;align-items:stretch;gap:0;border-top:1px solid rgba(227,204,159,.2)}
+      .nav-links.open{display:flex}
+      .nav-links li a{display:block;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.09)}
+      .nav-cta{border:0;padding:13px 4px}
+      .hero{min-height:690px;height:88svh}
+      .hero h1{letter-spacing:.14em}
+      .intro-grid{grid-template-columns:1fr;gap:42px}
+      .intro-photo{order:2;min-height:300px;margin-right:12px}
+      .intro-photo img{height:300px}
+      .info-strip{grid-template-columns:1fr;margin-top:35px}
+      .info-item{padding:17px}
+      .menu-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+      .menu-card{padding:19px 16px;min-height:86px}
+      .gallery-grid{grid-template-columns:1fr 1fr}
+      .gallery-card:first-child{grid-column:1/-1;min-height:300px}
+      .gallery-card:first-child img{min-height:300px}
+      .gallery-card,.gallery-card img{min-height:220px}
+      .contact-grid{grid-template-columns:1fr;gap:35px}
+      .map-wrap,.map-wrap iframe{min-height:330px}
+    }
+    @media(max-width:480px){
+      .container{width:calc(100% - 30px)}
+      .brand{font-size:1.28rem}
+      .hero{min-height:640px}
+      .hero-kicker{font-size:.7rem;letter-spacing:.22em}
+      .hero-en{letter-spacing:.25em;font-size:.72rem}
+      .hero-copy{letter-spacing:.08em}
+      .menu-grid{grid-template-columns:1fr}
+      .menu-card{min-height:76px;padding:17px 19px}
+      .gallery-grid{gap:10px}
+      .gallery-card,.gallery-card img{min-height:170px}
+      .gallery-card:first-child,.gallery-card:first-child img{min-height:235px}
+      .menu-notice{font-size:.82rem;padding:13px 15px}
+      .mobile-call{display:flex;position:fixed;z-index:40;right:16px;bottom:16px;width:54px;height:54px;border-radius:50%;align-items:center;justify-content:center;background:var(--red);color:white;box-shadow:0 8px 24px rgba(0,0,0,.25);font-size:1.3rem}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
 </head>
 <body>
-
-  <!-- ========== Navigation ========== -->
-  <nav id="navbar" class="fixed top-0 left-0 right-0 z-[1000] bg-[rgba(93,58,26,0.92)] backdrop-blur-md">
-    <div class="max-w-[1100px] mx-auto px-6 flex items-center justify-between h-16">
-      <a href="#hero" class="font-serif text-[#D4A745] text-[1.35rem] font-bold tracking-[2px]">一心牛排</a>
-      <button aria-label="選單" id="navToggle" class="hidden flex-col gap-[5px] bg-none border-none cursor-pointer p-1">
-        <span class="block w-6 h-[2px] bg-[#FFF8F0] rounded-sm transition duration-300"></span>
-        <span class="block w-6 h-[2px] bg-[#FFF8F0] rounded-sm transition duration-300"></span>
-        <span class="block w-6 h-[2px] bg-[#FFF8F0] rounded-sm transition duration-300"></span>
-      </button>
-      <ul id="navLinks" class="flex list-none gap-8">
-        <li><a href="#about" class="text-[#FFF8F0] text-sm transition-colors relative">關於我們</a></li>
-        <li><a href="#menu" class="text-[#FFF8F0] text-sm transition-colors relative">菜單</a></li>
-        <li><a href="#gallery" class="text-[#FFF8F0] text-sm transition-colors relative">環境照片</a></li>
-        <li><a href="#contact" class="text-[#FFF8F0] text-sm transition-colors relative">聯絡資訊</a></li>
+  <div class="topbar"></div>
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#hero" aria-label="一心牛排首頁">一心牛排<small>YI-XIN STEAK</small></a>
+      <button class="menu-toggle" id="navToggle" type="button" aria-label="開啟導覽選單" aria-expanded="false" aria-controls="navLinks">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">關於我們</a></li>
+        <li><a href="#menu">精選菜單</a></li>
+        <li><a href="#gallery">餐廳環境</a></li>
+        <li><a href="#contact">聯絡我們</a></li>
+        <li><a class="nav-cta" href="tel:052710887">立即致電</a></li>
       </ul>
     </div>
-  </nav>
+  </header>
 
-  <!-- ========== Hero Section ========== -->
-  <section id="hero" class="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
-    <img src="images/品牌.JPG" alt="一心牛排" class="absolute inset-0 w-full h-full object-cover" />
-    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(44,24,16,0.7)_100%)]"></div>
-    <div class="relative z-[1] px-6">
-      <h1 class="font-serif text-[clamp(3rem,8vw,6rem)] text-[#D4A745] tracking-[12px] drop-shadow-xl mb-3">一心牛排</h1>
-      <p class="text-[clamp(1rem,2.5vw,1.3rem)] text-[#F5EDE0] tracking-[6px] uppercase mb-6">Yi-Xin Cheap Steak</p>
-      <p class="text-[clamp(0.95rem,2vw,1.15rem)] text-[#FFF8F0]/85 max-w-[500px] mx-auto mb-10">平價享受，用心料理 — 嘉義人的家常牛排館</p>
-      <a href="#menu" class="inline-block px-9 py-[14px] rounded-md bg-[#C0392B] text-white shadow-lg transition-all duration-300 hover:bg-[#E74C3C] hover:-translate-y-[2px] hover:shadow-[0_6px_24px_rgba(192,57,43,0.5)]">查看菜單</a>
-    </div>
-  </section>
+  <main>
+    <section class="hero" id="hero" aria-label="一心牛排品牌首頁">
+      <img class="hero-bg" src="images/品牌.JPG" alt="" fetchpriority="high">
+      <div class="hero-content">
+        <div class="hero-kicker">嘉義・用心款待每一餐</div>
+        <h1>一心牛排</h1>
+        <p class="hero-en">YI-XIN STEAK HOUSE</p>
+        <p class="hero-copy">平價享受，用心料理<br>嘉義人的家常牛排館</p>
+        <a class="btn" href="#menu">探索美味菜單　→</a>
+        <div class="hero-note">DAILY　16:00 — 21:30</div>
+      </div>
+    </section>
 
-  <!-- ========== About Section ========== -->
-  <section class="py-20" id="about">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="font-serif text-3xl md:text-4xl text-center font-bold text-[#5D3A1A] mb-2 tracking-wide">關於一心牛排</h2>
-      <p class="w-16 h-1 bg-[#C0392B] mx-auto mb-10 rounded-full"></p>
-      <div class="grid md:grid-cols-2 gap-8 items-start mb-12">
-        <div class="text-gray-700 leading-relaxed space-y-4 text-lg">
-          <p>一心牛排，位於嘉義市吳鳳北路，是一家深受在地人喜愛的台式牛排館。我們堅持提供平價、美味的餐點，讓每一位顧客都能輕鬆享受牛排的滋味。</p>
-          <p>從經典菲力到厚片沙朗，再到魚排、雞排、豬排的多元選擇，一心牛排以誠摯的心意，為您打造溫暖的用餐體驗。無論是家庭聚餐、朋友小聚，這裡都是您安心落胃的好去處。</p>
-        </div>
-        <div class="space-y-4">
-          <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
-            <h3 class="text-lg font-bold text-[#5D3A1A] mb-2">營業時間</h3>
-            <p class="text-gray-600">每日 16:00 – 21:30</p>
+    <section class="section intro" id="about">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-photo">
+            <img src="images/餐點 (2).JPG" alt="一心牛排招牌餐點" loading="lazy">
           </div>
-          <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
-            <h3 class="text-lg font-bold text-[#5D3A1A] mb-2">餐廳地址</h3>
-            <p class="text-gray-600">600嘉義市東區北門里吳鳳北路314號</p>
-          </div>
-          <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
-            <h3 class="text-lg font-bold text-[#5D3A1A] mb-2">聯絡電話</h3>
-            <p class="text-gray-600"><a href="tel:05-2710887" class="text-[#C0392B] hover:underline">05-2710887</a></p>
+          <div class="intro-copy">
+            <div class="eyebrow">OUR STORY</div>
+            <h2>一份好滋味，<br>從用心開始。</h2>
+            <p>一心牛排位於嘉義市吳鳳北路，是一家深受在地人喜愛的台式牛排館。我們堅持提供平價、美味的餐點，讓每一位顧客都能輕鬆享受牛排的滋味。</p>
+            <p>從經典菲力到厚片沙朗，再到魚排、雞排、豬排的多元選擇，一心牛排以誠摯的心意，為您打造溫暖的用餐體驗。無論是家庭聚餐、朋友小聚，這裡都是您安心落胃的好去處。</p>
           </div>
         </div>
+        <div class="info-strip">
+          <div class="info-item"><strong>營業時間</strong><span>每日 16:00 – 21:30</span></div>
+          <div class="info-item"><strong>餐廳地址</strong><span>嘉義市東區吳鳳北路314號</span></div>
+          <div class="info-item"><strong>訂位／洽詢</strong><span>05-2710887</span></div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ========== Menu Section ========== -->
-  <section class="py-20 bg-[#FFF8F0]" id="menu">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="font-serif text-3xl md:text-4xl text-center font-bold text-[#5D3A1A] mb-2 tracking-wide">菜單</h2>
-      <p class="w-16 h-1 bg-[#C0392B] mx-auto mb-10 rounded-full"></p>
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">OUR MENU</div>
+          <h2>美味菜單</h2>
+          <p>簡單選擇，享受每一份熱騰騰的好味道</p>
+        </div>
+        <div class="menu-notice">
+          <p>◎ 填單時請於醬料欄位打勾選醬料，謝謝。</p>
+          <p>◎ 內用共餐需加收 50 元。</p>
+        </div>
 
-      <!-- Menu Notice -->
-      <div class="bg-[#FFF8F0] border-l-4 border-[#C0392B] p-4 mb-8 rounded-r-lg text-[#5D3A1A] leading-relaxed">
-        <p>◎ 填單時請於醬料欄位打勾選醬料，謝謝。</p>
-        <p>◎ 內用共餐需加收 50 元。</p>
+        <section class="menu-group" aria-labelledby="single-title">
+          <h3 class="group-title" id="single-title">單點品項</h3>
+          <div class="menu-grid">
+            <article class="menu-card"><h4>菲力牛排</h4><div class="price"><small>NT$</small>320</div></article>
+            <article class="menu-card"><h4>厚片沙朗</h4><div class="price"><small>NT$</small>220</div></article>
+            <article class="menu-card"><h4>魚排</h4><div class="price"><small>NT$</small>160</div></article>
+            <article class="menu-card"><h4>牛排</h4><div class="price"><small>NT$</small>170</div></article>
+            <article class="menu-card"><h4>雞排</h4><div class="price"><small>NT$</small>170</div></article>
+            <article class="menu-card"><h4>豬排</h4><div class="price"><small>NT$</small>150</div></article>
+          </div>
+        </section>
+
+        <section class="menu-group" aria-labelledby="pair-title">
+          <h3 class="group-title" id="pair-title">雙人套餐</h3>
+          <div class="menu-grid">
+            <article class="menu-card"><h4>菲力＋雞排</h4><div class="price"><small>NT$</small>410</div></article>
+            <article class="menu-card"><h4>厚牛＋厚牛</h4><div class="price"><small>NT$</small>360</div></article>
+            <article class="menu-card"><h4>厚牛＋雞排</h4><div class="price"><small>NT$</small>300</div></article>
+            <article class="menu-card"><h4>牛排＋牛排</h4><div class="price"><small>NT$</small>260</div></article>
+            <article class="menu-card"><h4>牛排＋雞排</h4><div class="price"><small>NT$</small>260</div></article>
+            <article class="menu-card"><h4>牛排＋魚排</h4><div class="price"><small>NT$</small>260</div></article>
+            <article class="menu-card"><h4>魚排＋雞排</h4><div class="price"><small>NT$</small>260</div></article>
+            <article class="menu-card"><h4>魚排＋豬排</h4><div class="price"><small>NT$</small>250</div></article>
+            <article class="menu-card"><h4>雞排＋豬排</h4><div class="price"><small>NT$</small>250</div></article>
+            <article class="menu-card"><h4>牛排＋豬排</h4><div class="price"><small>NT$</small>250</div></article>
+          </div>
+        </section>
+
+        <section class="menu-group" aria-labelledby="add-title">
+          <h3 class="group-title" id="add-title">加點品項</h3>
+          <div class="menu-grid">
+            <article class="menu-card"><h4>鐵板麵</h4><div class="price"><small>NT$</small>100</div></article>
+          </div>
+        </section>
       </div>
+    </section>
 
-      <!-- ====== 單點品項 ====== -->
-      <h3 class="font-serif text-2xl font-bold text-[#5D3A1A] mb-6 mt-8 border-b pb-2">單點品項</h3>
-      <div class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-6 mb-12">
-        <!-- 菲力牛排 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"><div class="h-40 bg-gray-100 flex items-center justify-center text-sm text-gray-400"><span>照片待補</span></div><div class="p-5"><h4 class="font-bold text-[#5D3A1A] mb-1">菲力牛排</h4><p class="text-[#C0392B] font-semibold">$320</p></div></div>
-        <!-- 厚片沙朗 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"><div class="h-40 bg-gray-100 flex items-center justify-center text-sm text-gray-400"><span>照片待補</span></div><div class="p-5"><h4 class="font-bold text-[#5D3A1A] mb-1">厚片沙朗</h4><p class="text-[#C0392B] font-semibold">$220</p></div></div>
-        <!-- 魚排 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"><div class="h-40 bg-gray-100 flex items-center justify-center text-sm text-gray-400"><span>照片待補</span></div><div class="p-5"><h4 class="font-bold text-[#5D3A1A] mb-1">魚排</h4><p class="text-[#C0392B] font-semibold">$160</p></div></div>
-        <!-- 牛排 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"><div class="h-40 bg-gray-100 flex items-center justify-center text-sm text-gray-400"><span>照片待補</span></div><div class="p-5"><h4 class="font-bold text-[#5D3A1A] mb-1">牛排</h4><p class="text-[#C0392B] font-semibold">$170</p></div></div>
-        <!-- 雞排 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"><div class="h-40 bg-gray-100 flex items-center justify-center text-sm text-gray-400"><span>照片待補</span></div><div class="p-5"><h4 class="font-bold text-[#5D3A1A] mb-1">雞排</h4><p class="text-[#C0392B] font-semibold">$170</p></div></div>
-        <!-- 豬排 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"><div class="h-40 bg-gray-100 flex items-center justify-center text-sm text-gray-400"><span>照片待補</span></div><div class="p-5"><h4 class="font-bold text-[#5D3A1A] mb-1">豬排</h4><p class="text-[#C0392B] font-semibold">$150</p></div></div>
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">GALLERY</div>
+          <h2>走進一心，感受日常美味</h2>
+          <p>舒適自在的用餐時光，適合與家人朋友共享</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-card"><img src="images/店面外觀 (2).jpg" alt="一心牛排餐廳外觀" loading="lazy"><figcaption>店面外觀</figcaption></figure>
+          <figure class="gallery-card"><img src="images/餐點 (2).JPG" alt="一心牛排招牌牛排" loading="lazy"><figcaption>招牌牛排</figcaption></figure>
+          <figure class="gallery-card"><img src="images/餐點.JPG" alt="一心牛排特色餐點" loading="lazy"><figcaption>特色餐點</figcaption></figure>
+        </div>
       </div>
+    </section>
 
-      <!-- ====== 雙人套餐 ====== -->
-      <h3 class="font-serif text-2xl font-bold text-[#5D3A1A] mb-6 mt-8 border-b pb-2">雙人套餐</h3>
-      <div class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-6 mb-12">
-        <!-- 菲力＋雞排 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"><div class="h-40 bg-gray-100 flex items-center justify-center text-sm text-gray-400"><span>照片待補</span></div><div class="p-5"><h4 class="font-bold text-[#5D3A1A] mb-1">菲力＋雞排</h4><p class="text-[#C0392B] font-semibold">$410</p></div></div>
-        <!-- 厚牛＋厚牛 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"><div class="h-40 bg-gray-100 flex items-center justify-center text-sm text-gray-400"><span>照片待補</span></div><div class="p-5"><h4 class="font-bold text-[#5D3A1A] mb-1">厚牛＋厚牛</h4><p class="text-[#C0392B] font-semibold">$360</p></div></div>
-        <!-- 厚牛＋雞排 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"><div class="h-40 bg-gray-100 flex items-center justify-center text-sm text-gray-400"><span>照片待補</span></div><div class="p-5"><h4 class="font-bold text-[#5D3A1A] mb-1">厚牛＋雞排</h4><p class="text-[#C0392B] font-semibold">$300</p></div></div>
-        <!-- 牛排＋牛排 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"><div class="h-40 bg-gray-100 flex items-center justify-center text-sm text-gray-400"><span>照片待補</span></div><div class="p-5"><h4 class="font-bold text-[#5D3A1A] mb-1">牛排＋牛排</h4><p class="text-[#C0392B] font-semibold">$260</p></div></div>
-        <!-- 牛排＋雞排 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"><div class="h-40 bg-gray-100 flex items-center justify-center text-sm text-gray-400"><span>照片待補</span></div><div class="p-5"><h4 class="font-bold text-[#5D3A1A] mb-1">牛排＋雞排</h4><p class="text-[#C0392B] font-semibold">$260</p></div></div>
-        <!-- 牛排＋魚排 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"><div class="h-40 bg-gray-100 flex items-center justify-center text-sm text-gray-400"><span>照片待補</span></div><div class="p-5"><h4 class="font-bold text-[#5D3A1A] mb-1">牛排＋魚排</h4><p class="text-[#C0392B] font-semibold">$260</p></div></div>
-        <!-- 魚排＋雞排 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"><div class="h-40 bg-gray-100 flex items-center justify-center text-sm text-gray-400"><span>照片待補</span></div><div class="p-5"><h4 class="font-bold text-[#5D3A1A] mb-1">魚排＋雞排</h4><p class="text-[#C0392B] font-semibold">$260</p></div></div>
-        <!-- 魚排＋豬排 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"><div class="h-40 bg-gray-100 flex items-center justify-center text-sm text-gray-400"><span>照片待補</span></div><div class="p-5"><h4 class="font-bold text-[#5D3A1A] mb-1">魚排＋豬排</h4><p class="text-[#C0392B] font-semibold">$250</p></div></div>
-        <!-- 雞排＋豬排 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"><div class="h-40 bg-gray-100 flex items-center justify-center text-sm text-gray-400"><span>照片待補</span></div><div class="p-5"><h4 class="font-bold text-[#5D3A1A] mb-1">雞排＋豬排</h4><p class="text-[#C0392B] font-semibold">$250</p></div></div>
-        <!-- 牛排＋豬排 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"><div class="h-40 bg-gray-100 flex items-center justify-center text-sm text-gray-400"><span>照片待補</span></div><div class="p-5"><h4 class="font-bold text-[#5D3A1A] mb-1">牛排＋豬排</h4><p class="text-[#C0392B] font-semibold">$250</p></div></div>
-      </div>
-
-      <!-- ====== 加點品項 ====== -->
-      <h3 class="font-serif text-2xl font-bold text-[#5D3A1A] mb-6 mt-8 border-b pb-2">加點品項</h3>
-      <div class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-6 mb-12">
-        <!-- 鐵板麵 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"><div class="h-40 bg-gray-100 flex items-center justify-center text-sm text-gray-400"><span>照片待補</span></div><div class="p-5"><h4 class="font-bold text-[#5D3A1A] mb-1">鐵板麵</h4><p class="text-[#C0392B] font-semibold">$100</p></div></div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ========== Gallery Section ========== -->
-  <section class="py-20 bg-[#FFF8F0]" id="gallery">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="font-serif text-3xl md:text-4xl text-center font-bold text-[#5D3A1A] mb-2 tracking-wide">環境照片</h2>
-      <p class="w-16 h-1 bg-[#C0392B] mx-auto mb-10 rounded-full"></p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="rounded-xl overflow-hidden shadow-md bg-gray-100"><img src="images/店面外觀 (2).jpg" alt="餐廳外觀" loading="lazy" /><p>餐廳外觀</p></div>
-        <div class="rounded-xl overflow-hidden shadow-md bg-gray-100"><img src="images/餐點 (2).JPG" alt="招牌牛排" loading="lazy" /><p>招牌牛排</p></div>
-        <div class="rounded-xl overflow-hidden shadow-md bg-gray-100"><img src="images/餐點.JPG" alt="特色餐點" loading="lazy" /><p>特色餐點</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== Contact Section ========== -->
-  <section class="py-20" id="contact">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="font-serif text-3xl md:text-4xl text-center font-bold text-[#5D3A1A] mb-2 tracking-wide">聯絡資訊</h2>
-      <p class="w-16 h-1 bg-[#C0392B] mx-auto mb-10 rounded-full"></p>
-      <div class="grid md:grid-cols-2 gap-10 items-start">
-        <div class="space-y-6">
-          <div class="flex gap-4 items-start">
-            <span class="text-3xl">📍</span>
-            <div>
-              <strong>地址</strong>
-              <p class="text-gray-600"><a href="https://www.google.com/maps/dir/?api=1&destination=23.483981,120.453303" target="_blank" rel="noopener noreferrer" class="text-[#C0392B] hover:underline">600嘉義市東區北門里吳鳳北路314號</a></p>
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">VISIT US</div>
+          <h2>期待您的光臨</h2>
+          <p>找個時間，來一心享受一份熱騰騰的牛排</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-details">
+            <div class="contact-row"><div class="contact-icon">⌖</div><div><strong>餐廳地址</strong><p><a href="https://www.google.com/maps/dir/?api=1&destination=23.483981,120.453303" target="_blank" rel="noopener noreferrer">600 嘉義市東區北門里吳鳳北路314號</a></p></div></div>
+            <div class="contact-row"><div class="contact-icon">☎</div><div><strong>聯絡電話</strong><p><a href="tel:052710887">05-2710887</a></p></div></div>
+            <div class="contact-row"><div class="contact-icon">◷</div><div><strong>營業時間</strong><p>每日 16:00 – 21:30</p></div></div>
+            <div class="contact-actions">
+              <a class="btn" href="tel:052710887">電話洽詢</a>
+              <a class="btn btn-outline" style="color:var(--coffee);border-color:var(--gold)" href="https://www.google.com/maps/dir/?api=1&destination=23.483981,120.453303" target="_blank" rel="noopener noreferrer">地圖導航</a>
             </div>
           </div>
-          <div class="flex gap-4 items-start">
-            <span class="text-3xl">📞</span>
-            <div>
-              <strong>電話</strong>
-              <p><a href="tel:05-2710887" class="text-[#C0392B] hover:underline">05-2710887</a></p>
-            </div>
+          <div class="map-wrap">
+            <iframe title="一心牛排地圖位置" src="https://www.google.com/maps?q=23.483981,120.453303&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
           </div>
-          <div class="flex gap-4 items-start">
-            <span class="text-3xl">🕐</span>
-            <div>
-              <strong>營業時間</strong>
-              <p>每日 16:00 – 21:00</p>
-            </div>
-          </div>
-        </div>
-        <div class="h-80 rounded-xl overflow-hidden shadow-md">
-          <!-- Google Maps Embed -->
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.1!2d120.453303!3d23.483981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzU3LjIiTiAxMjDCsDI3JzQyLjEiRQ!5e0!3m2!1szh-TW!2stw!4v1700000000000"
-            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-          </iframe>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- ========== JavaScript ========== -->
-  <script>
-    // ---- Hamburger Menu Toggle ----
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-
-    navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-    });
-
-    // Close menu when a link is clicked (mobile)
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-      });
-    });
-
-    // ---- Navbar Scroll Effect ----
-    const navbar = document.getElementById('navbar');
-
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 80) {
-        navbar.style.background = 'rgba(44, 24, 16, 0.97)';
-        navbar.style.boxShadow = '0 2px 12px rgba(0,0,0,0.3)';
-      } else {
-        navbar.style.background = 'rgba(93, 58, 26, 0.92)';
-        navbar.style.boxShadow = 'none';
-      }
-    });
-  </script>
-
-  <!-- ========== Footer ========== -->
-  <footer class="bg-[#5D3A1A] text-center py-8 text-[#FFF8F0]/70">
-    <div class="max-w-6xl mx-auto px-6">
-      <p>&copy; 2024 一心牛排 Yi-Xin Cheap Steak. All rights reserved.</p>
-    </div>
+  <a class="mobile-call" href="tel:052710887" aria-label="立即撥打一心牛排電話">☎</a>
+  <footer>
+    <div class="footer-brand">一心牛排</div>
+    <p>平價享受，用心料理</p>
+    <p>© <span id="year"></span> 一心牛排 Yi-Xin Steak. All rights reserved.</p>
   </footer>
 
+  <script>
+    (() => {
+      const toggle = document.getElementById('navToggle');
+      const links = document.getElementById('navLinks');
+      const navbar = document.getElementById('navbar');
+      const closeMenu = () => {
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', '開啟導覽選單');
+        toggle.textContent = '☰';
+      };
+      toggle.addEventListener('click', () => {
+        const isOpen = links.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        toggle.setAttribute('aria-label', isOpen ? '關閉導覽選單' : '開啟導覽選單');
+        toggle.textContent = isOpen ? '✕' : '☰';
+      });
+      links.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape') closeMenu();
+      });
+      const updateNavbar = () => {
+        navbar.style.boxShadow = window.scrollY > 30 ? '0 8px 28px rgba(0,0,0,.18)' : 'none';
+      };
+      window.addEventListener('scroll', updateNavbar, {passive:true});
+      updateNavbar();
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
